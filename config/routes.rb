@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   end
 
   get 'enable_otp_show_qr', to: 'users#enable_otp_show_qr', as: 'enable_otp_show_qr'
+  get 'disable_otp_show', to: 'users#disable_otp_show', as: 'disable_otp_show'
+  post 'disable_otp_verify', to: 'users#disable_otp_verify', as: 'disable_otp_verify'
   post 'enable_otp_verify', to: 'users#enable_otp_verify', as: 'enable_otp_verify'
 
   get 'users/otp', to: 'users#show_otp', as: 'user_otp'

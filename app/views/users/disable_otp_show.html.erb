@@ -1,0 +1,8 @@
+<%= form_tag(disable_otp_verify_path, method: :post) do %>
+  <div>
+    <label for="otp_attempt">Enter OTP</label>
+    <%= text_field_tag :otp_attempt %>
+  </div>
+  <%= submit_tag "Verify and Disable" %>
+<% end %>
+<%= link_to "Back", root_path %>
